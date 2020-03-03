@@ -5,19 +5,18 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-      testOddness();
+        lastDigit();
     }
-        public static void testOddness(){
+    public static void lastDigit(){
 
-            int number;
+        int number;
 
         Scanner keyboard;
         keyboard = new Scanner (System.in);
 
-     System.out.println("Name a positive number");
-    number= keyboard.nextInt();
+        System.out.println("Name a positive number that is 4 digits long");
+        number = keyboard.nextInt();
 
-
-	System.out.println("Number is odd: " + (number % 2 != 0));
+        System.out.println("The last digit of number is: "+number%10);
     }
 }
